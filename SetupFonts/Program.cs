@@ -66,6 +66,10 @@ namespace SetupFonts
                     {
                         fontList.Add(File.Name);
                     }
+                    else if (File.Extension.ToLower().CompareTo(".ttf") == 0)
+                    {
+                        fontList.Add(File.Name);
+                    }
                 }
 
                 foreach (string fontName in fontList)
